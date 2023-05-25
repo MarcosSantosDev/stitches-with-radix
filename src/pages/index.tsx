@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Pagina inicial</title>
+        <title>Use Stitches with Next.js</title>
       </Head>
       <main>
         <HomeModule />

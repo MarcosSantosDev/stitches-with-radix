@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import type * as Stitches from '@stitches/react'
 import { createStitches } from '@stitches/react'
+import { violet, gray, mauve, red } from '@radix-ui/colors'
 
 const inter = Inter({
     subsets: ["latin"],
@@ -19,50 +20,63 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      hiContrast: 'hsl(206,10%,5%)',
-      loContrast: 'white',
-
-      gray100: 'hsl(206,22%,99%)',
-      gray200: 'hsl(206,12%,97%)',
-      gray300: 'hsl(206,11%,92%)',
-      gray400: 'hsl(206,10%,84%)',
-      gray500: 'hsl(206,10%,76%)',
-      gray600: 'hsl(206,10%,44%)',
-
-      purple100: 'hsl(252,100%,99%)',
-      purple200: 'hsl(252,100%,98%)',
-      purple300: 'hsl(252,100%,94%)',
-      purple400: 'hsl(252,75%,84%)',
-      purple500: 'hsl(252,78%,60%)',
-      purple600: 'hsl(252,80%,53%)',
+      ...violet,
+      ...gray,
+      ...mauve,
+      ...red
     },
     space: {
-      1: '5px',
-      2: '10px',
-      3: '15px',
-      4: '20px',
-      5: '25px',
-      6: '35px',
+      1: '4px',
+      2: '8px',
+      3: '12px',
+      4: '16px',
+      5: '20px',
+      6: '24px',
+      7: '28px',
+      8: '32px',
+      9: '36px',
+      10: '40px'
     },
     sizes: {
-      1: '5px',
-      2: '10px',
-      3: '15px',
-      4: '20px',
-      5: '25px',
-      6: '35px',
+      1: '4px',
+      2: '8px',
+      3: '12px',
+      4: '16px',
+      5: '20px',
+      6: '24px',
+      7: '28px',
+      8: '32px',
+      9: '36px',
+      10: '40px'
     },
     fontSizes: {
-      1: '12px',
-      2: '13px',
-      3: '15px',
-      4: '17px',
-      5: '19px',
-      6: '21px',
+      1: '0.4rem',
+      2: '0.8rem',
+      3: '1.2rem',
+      4: '1.6rem',
+      5: '2rem',
+      6: '2.4rem',
+      7: '2.8rem',
+      8: '3.2rem',
+      9: '3.6rem',
+      10: '4rem'
     },
     fonts: {
       system: `${inter.style.fontFamily}`,
     },
+    radii: {
+      1: '4px',
+      2: '8px',
+      3: '12px',
+      4: '16px',
+      5: '20px',
+      6: '24px',
+      7: '28px',
+      8: '32px',
+      9: '36px',
+      10: '40px',
+      circle: '100%',
+    }
   },
   utils: {
     marginX: (value: Stitches.PropertyValue<'margin'>) => ({
@@ -83,7 +97,10 @@ export const {
     }),
   },
   media: {
-    bp1: '(min-width: 520px)',
-    bp2: '(min-width: 900px)',
+    mobile: '(max-width: 600px)',
+    tablet: '(min-width: 600px)',
+    laptop: '(min-width: 768px)',
+    desktop: '(min-width: 992px)',
+    screemsXlarge: '(min-width: 1200px)',
   },
 })

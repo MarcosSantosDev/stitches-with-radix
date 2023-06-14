@@ -5,6 +5,7 @@ import Selects from './Selects';
 import Buttons from './Buttons';
 import Tooltip from './Tooltip';
 import RadioGroup from './RadioGroup';
+import Grid from './Grid';
 
 import * as S from './Playground.styles';
 
@@ -16,6 +17,7 @@ export default function Playground() {
       <Buttons />
       <Tooltip />
       <RadioGroup />
+      <Grid />
     </S.CardGroup>
   );
 }
